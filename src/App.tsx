@@ -78,7 +78,7 @@ function App() {
               <div>
                 <h1 className={`text-3xl font-bold tracking-tight ${
                   isDarkMode ? 'text-white' : 'text-black'
-                }`}>Stress Analytics</h1>
+                }`}>Stress Detecting Model Using Salivary Biomarkers</h1>
               </div>
             </motion.div>
 

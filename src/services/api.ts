@@ -172,7 +172,6 @@ const parseGradioResponse = (responseData: any, inputData: StressData): StressRe
       score: Math.round(Math.max(0, Math.min(100, score))),
       level,
       recommendations: [
-        `✅ HuggingFace analysis completed for ${inputData.user_name}`,
         typeof predictionText === 'string' ? predictionText : `Stress probability: ${score.toFixed(1)}%`,
         score > 70 ? 'Consider stress management techniques and professional consultation' :
         score < 30 ? 'Excellent stress management! Continue your healthy lifestyle' :
@@ -209,7 +208,6 @@ const parseGradioResponse = (responseData: any, inputData: StressData): StressRe
       score: Math.round(Math.max(0, Math.min(100, score))),
       level: score > 70 ? 'High' : score < 30 ? 'Low' : 'Moderate',
       recommendations: [
-        `✅ HuggingFace analysis for ${inputData.user_name}`,
         responseData,
         'Analysis based on your biomarker levels',
         'Continue monitoring your stress indicators'

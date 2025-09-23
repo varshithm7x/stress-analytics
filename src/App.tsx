@@ -104,6 +104,31 @@ function App() {
 
       </header>
 
+      {/* Description Section */}
+      <section className={`py-6 border-b ${
+        isDarkMode ? 'border-white/20' : 'border-black/20'
+      }`}>
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="max-w-4xl"
+          >
+            <p className={`text-base leading-relaxed ${
+              isDarkMode ? 'text-white/90' : 'text-black/90'
+            }`}>
+              This stress analytic model utilizes salivary biomarkers to detect and monitor stress levels in a non-invasive and efficient manner. By analyzing biological indicators present in saliva, it enables accurate and real-time stress assessment, contributing to advancements in healthcare and wellness monitoring.
+            </p>
+            <p className={`text-sm mt-3 italic ${
+              isDarkMode ? 'text-white/70' : 'text-black/70'
+            }`}>
+              The AI based model has been designed by Kashish.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Main content */}
       <main className="container mx-auto px-6 py-8">
         <div className="max-w-7xl mx-auto">

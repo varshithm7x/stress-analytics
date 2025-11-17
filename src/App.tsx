@@ -118,7 +118,7 @@ function App() {
             <p className={`text-base leading-relaxed ${
               isDarkMode ? 'text-white/90' : 'text-black/90'
             }`}>
-              This stress analytic model utilizes salivary biomarkers to detect and monitor stress levels in a non-invasive and efficient manner. By analyzing biological indicators present in saliva, it enables accurate and real-time stress assessment, contributing to advancements in healthcare and wellness monitoring.
+              This stress analytic model utilizes salivary biomarkers to detect and monitor stress levels in a non-invasive and efficient manner. By analyzing biological indicators present in saliva, it enables accurate and real-time stress assessment, contributing to advancements in healthcare and wellness monitoring. The AI based model has been designed by Kashish, and the conceptual idea was proposed by Dhvani
             </p>
             <p className={`text-sm mt-3 italic ${
               isDarkMode ? 'text-white/70' : 'text-black/70'
